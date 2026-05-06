@@ -15,8 +15,8 @@ const checkAuth = require("../middleware/auth")
 const validateUser = require("../middleware/validateuser")
 
 // Public Routes
-router.post("/register", validateuser, registerUser)
-router.post("/login", validateuser, loginUser)
+router.post("/register", validateUser, registerUser)
+router.post("/login", validateUser, loginUser)
 
 // Protected Routes
 router.get("/users", checkAuth, getUsers)

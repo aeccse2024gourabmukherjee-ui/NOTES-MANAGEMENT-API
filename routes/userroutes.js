@@ -12,11 +12,11 @@ const {
 
 // Middleware
 const checkAuth = require("../middleware/auth")
-const validateUser = require("../middleware/validateUser")
+const validateUser = require("../middleware/validateuser")
 
 // Public Routes
-router.post("/register", validateUser, registerUser)
-router.post("/login", validateUser, loginUser)
+router.post("/register", validateuser, registerUser)
+router.post("/login", validateuser, loginUser)
 
 // Protected Routes
 router.get("/users", checkAuth, getUsers)

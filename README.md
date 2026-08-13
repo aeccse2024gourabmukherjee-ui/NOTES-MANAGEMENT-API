@@ -29,7 +29,7 @@ authenticated users to create, read, update, and delete their notes.
 
 
 notes-management-api/
-├── config/
+├── config/ db.js
 ├── controller/
 │   ├── notescontroller.js
 │   └── usercontroller.js
